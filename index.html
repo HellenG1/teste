@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>
+    Site Notícia
+  </title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+    <div class="header">
+      <div class="logotipo">
+        <img src="./img/Logotipo.png" alt="Logotipo" title="Pizzaria" />
+      </div>
+      <h1>Jornal Notícia</h1>
+      </div>
+      <div class="menu">
+        <nav id="menu-h">
+          <ul>
+              <li><a href="index.html">Home</a></li>
+  
+              <li><a href="#">Sobre</a></li>
+              
+              <li><a href="#">Quem Somos</a></li>
+              
+              <li><a href="#">Contato</a></li>
+              
+              <li><a href="#">Entrar</a></li>
+          </ul>
+      </nav>
+      </div>
+
+  <div class="g_slide" id="slides">
+    <div class="switch_main">
+      <a class="item switch_item" href="#"><img data-src="https://unsplash.it/752/450?image=738" /></a>
+      <a class="item switch_item" href="#"><img data-src="https://unsplash.it/752/450?image=733" /></a>
+      <a class="item switch_item" href="#"><img data-src="https://unsplash.it/752/450?image=635" /></a>
+      <a class="item switch_item" href="#"><img data-src="https://unsplash.it/752/450?image=335" /></a>
+      <a class="item switch_item" href="#"><img data-src="https://unsplash.it/752/450?image=435" /></a>
+    </div>
+  </div>
+
+
+  <script src="./js/jquery-1.11.3.min.js"></script>
+  <script src="./js/switchable.js"></script> 
+  <script>
+  $(function(){
+    switchable({
+      $element: $('#slides')
+      ,interval: 5000
+      ,animateSpeed: 500
+      
+    });
+    switchable({
+      $element: $('#slides1')
+      ,interval: 2000
+      ,effect: 'fade'
+    });
+    switchable({
+      $element: $('#scroll_wrap')
+      ,interval: 2000
+      ,showNav: true
+      //,effect: 'fade'
+      ,type: 'imgScroll'
+      ,imgScroll: {
+        num: 2
+      }
+    });
+  });
+  </script>
+  </div>
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-36251023-1']);
+    _gaq.push(['_setDomainName', 'jqueryscript.net']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+
+
+<div class="container">
+<div class="manchete">
+  <img src="./img/Economia.png" alt="Notícia" title="Economia" />
+  <h1>O Brasil tem uma Economia Expansionista</h1>
+  <h2>Fonte: Jornal TV Record Jornalista: Rodrigo Faro</h2>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, unde asperiores quaerat deserunt assumenda repellat quibusdam quasi sequi totam fugiat laborum in provident illum facilis. Ex deserunt id ullam nobis!<br></p>
+</div>
+
+<div class="noticia">
+  <img src="./img/Dolar.jpg" alt="Notícia" title="Economia" />
+  <h1>O Dolar caiu depois das eleições</h1>
+  <h2>Fonte: Jornal TV Record Jornalista: Rodrigo Faro</h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, laboriosam maiores odit officiis temporibus neque vitae exercitationem sint vel fuga at minima iusto odio? Deleniti ut laborum atque at earum?</p>
+</div>
+
+</div>
+      <div class='footer'>
+        <p>Desenvolvido por Georgio Silva</p>
+      </div>
+</body>
+</html>
